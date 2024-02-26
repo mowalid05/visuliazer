@@ -1,0 +1,55 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'create-next-app' ]
+2 info using npm@6.14.18
+3 info using node@v14.21.3
+4 verbose npm-session addd5a33845ceb85
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 http fetch GET 304 https://registry.npmjs.org/create-next-app 778ms (from cache)
+8 silly pacote tag manifest for create-next-app@latest fetched in 804ms
+9 timing stage:loadCurrentTree Completed in 817ms
+10 silly install loadIdealTree
+11 silly install cloneCurrentTreeToIdealTree
+12 timing stage:loadIdealTree:cloneCurrentTree Completed in 0ms
+13 silly install loadShrinkwrap
+14 timing stage:loadIdealTree:loadShrinkwrap Completed in 1ms
+15 silly install loadAllDepsIntoIdealTree
+16 silly resolveWithNewModule create-next-app@14.1.0 checking installable status
+17 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 3ms
+18 timing stage:loadIdealTree Completed in 5ms
+19 silly currentTree lib
+20 silly idealTree lib
+20 silly idealTree └── create-next-app@14.1.0
+21 silly install generateActionsToTake
+22 warn checkPermissions Missing write access to /usr/lib/node_modules
+23 timing stage:rollbackFailedOptional Completed in 1ms
+24 timing stage:runTopLevelLifecycles Completed in 828ms
+25 warn notsup Unsupported engine for create-next-app@14.1.0: wanted: {"node":">=18.17.0"} (current: {"node":"14.21.3","npm":"6.14.18"})
+26 warn notsup Not compatible with your version of node/npm: create-next-app@14.1.0
+27 verbose notsup Not compatible with your version of node/npm: create-next-app@14.1.0
+27 verbose notsup Required: {"node":">=18.17.0"}
+27 verbose notsup Actual:   {"npm":"6.14.18","node":"14.21.3"}
+28 verbose stack Error: EACCES: permission denied, access '/usr/lib/node_modules'
+29 verbose cwd /home/mowalid/projects/algo
+30 verbose Linux 5.10.102.1-microsoft-standard-WSL2
+31 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "create-next-app"
+32 verbose node v14.21.3
+33 verbose npm  v6.14.18
+34 error code EACCES
+35 error syscall access
+36 error path /usr/lib/node_modules
+37 error errno -13
+38 error Error: EACCES: permission denied, access '/usr/lib/node_modules'
+38 error  [Error: EACCES: permission denied, access '/usr/lib/node_modules'] {
+38 error   errno: -13,
+38 error   code: 'EACCES',
+38 error   syscall: 'access',
+38 error   path: '/usr/lib/node_modules'
+38 error }
+39 error The operation was rejected by your operating system.
+39 error It is likely you do not have the permissions to access this file as the current user
+39 error
+39 error If you believe this might be a permissions issue, please double-check the
+39 error permissions of the file and its containing directories, or try running
+39 error the command again as root/Administrator.
+40 verbose exit [ -13, true ]
